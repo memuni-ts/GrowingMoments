@@ -1,0 +1,161 @@
+.article-ttl {
+    font-size: 18px;
+}
+
+.pickup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    gap: 20px;
+    padding: 0 10%;
+}
+
+.pickup article {
+    width: 32%;
+    flex-shrink: 0;
+}
+
+.pickup h2 {
+    color: #2f67c9;
+}
+
+.pickup img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.read-more {
+    font-size: 12px;
+    text-align: center;
+}
+
+/* 通常状態でリンクに下線をつける */
+.read-more a {
+    border-bottom: 1px solid #2f67c9;
+    /* 下線をボーダーで表現 */
+    color: inherit;
+    /* 親要素の色に合わせる */
+    transition: border-color 0.3s ease;
+    /* ボーダーの色の変化にアニメーションを追加 */
+}
+
+/* ホバー時に下線の色を透明にしてゆっくり消える */
+.read-more a:hover {
+    border-color: transparent;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80％;
+    padding: 0 10％;
+}
+
+/* 最新記事 */
+.latest-posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65%;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.latest-posts article {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.latest-posts .article-ttl {
+    font-size: 22px;
+    margin: 20px 0;
+    color: #2f67c9;
+}
+
+.latest-posts .meta {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.latest-posts .meta .date,
+.latest-posts .meta .category {
+    margin-right: 10px;
+}
+
+.latest-posts img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.latest-posts .intro {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* 最新記事のリンク */
+.latest-posts .read-more a {
+    font-size: 14px;
+    color: #2f67c9;
+    text-decoration: none;
+    border-bottom: 2px solid #2f67c9;
+    padding-bottom: 1px;
+    transition: border-color 0.3s ease;
+}
+
+.latest-posts .read-more a:hover {
+    border-color: transparent;
+}
+
+/* 右側（プロフィールやランキング、アーカイブ） */
+.sidebar {
+    width: 35%;
+    padding: 20px;
+}
+
+.sidebar .profile,
+.sidebar .ranking,
+.sidebar .archive {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.sidebar .profile h3,
+.sidebar .ranking h3,
+.sidebar .archive h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #2f67c9;
+}
+
+.ranking img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.author img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.archive {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.archive li {
+    font-size: 10px;
+    border-top: solid 1px #777;
+    padding: 20px;
+    text-align: left;
+}
